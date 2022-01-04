@@ -66,8 +66,8 @@ jobs:
 #         outputSarifFile: processed-sarifs
 #         githubToken: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: show files
-      run: ls -l processed-sarifs && echo "--------" && cat processed-sarifs/1.sarif
+#     - name: show files
+#       run: ls -l processed-sarifs && echo "--------" && cat processed-sarifs/1.sarif
 
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
